@@ -1,4 +1,4 @@
-Simply adding GSAP  (greensock) tween to pan/zoom, which requires including these lines in the html:
+This fork simply adding GSAP (greensock) tween to pan/zoom, which requires including these lines in the html:
 
 (CSSPlugin.min.js and EasePack.min.js may or maynot be required.)
 
