@@ -1,3 +1,14 @@
+Simply adding GSAP  (greensock) tween to pan/zoom, which requires including these lines in the html:
+
+(CSSPlugin.min.js and EasePack.min.js may or maynot be required.)
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+    <script src="./svg-pan-zoom-gsap.js"></script>
+
+For an example, see embed-gsap.html 
+
 ![svg-pan-zoom logo](http://ariutta.github.io/svg-pan-zoom/svg-pan-zoom-logo.png)
 
 svg-pan-zoom library
