@@ -1387,7 +1387,7 @@ module.exports = {
     var that = this
       , s = 'matrix(' + matrix.a + ',' + matrix.b + ',' + matrix.c + ',' + matrix.d + ',' + matrix.e + ',' + matrix.f + ')';
 
-    if (TweenLite !== undefined) {
+    if (typeof TweenLite !== undefined) {
       TweenLite.to(element, .4, {css:{transform:s},transformOrigin:"0px 0px"});
     } else {
       element.setAttributeNS(null, 'transform', s);
