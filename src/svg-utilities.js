@@ -148,7 +148,11 @@ module.exports = {
     var that = this
       , s = 'matrix(' + matrix.a + ',' + matrix.b + ',' + matrix.c + ',' + matrix.d + ',' + matrix.e + ',' + matrix.f + ')';
 
-    element.setAttributeNS(null, 'transform', s);
+    if (typeof TweenLite !== "undefined") {
+      TweenLite.to(element, .4, {css:{transform:s},transformOrigin:"0px 0px"});
+    } else {
+      element.setAttributeNS(null, 'transform', s);
+    }
 
     // IE has a bug that makes markers disappear on zoom (when the matrix "a" and/or "d" elements change)
     // see http://stackoverflow.com/questions/17654578/svg-marker-does-not-work-in-ie9-10
